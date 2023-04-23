@@ -250,38 +250,44 @@ body {
 
 /**----------HERO----------*/
 .hero {
-    max-width: 1440px;
-    height: 600px;
+    height: 432px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--header-logo-title, #2E2F42);
     background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     text-align: center;
     
-    
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-mob-2x.jpg);
+    }
 }
 
 .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--mainbg-title, #FFFFFF);
     
 }
 
 .hero-btn {
-    margin-top: 48px;
+    margin-top: 72px;
     min-width: 169px;
     height: 56px;
     border-radius: 4px;
-        
-
+    
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
