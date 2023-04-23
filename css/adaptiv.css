@@ -1,0 +1,230 @@
+
+
+
+.container {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+/**----------------MOB------------------------*/
+@media screen and (max-width: 427px){
+    .menu-soc-list{
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+
+@media screen and (min-width: 428px) {
+    .container{
+        width: 396px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .menu-soc-list {
+        
+
+    }
+    
+
+}
+/**----------------TAB------------------------*/
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+        /**----------HEADER----------*/
+    .header {
+        border-bottom: 1px solid #E7E9FC;
+    }
+    
+    .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    .header-navigation {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+    }
+    
+    .header-logo {
+        margin-right: 120px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--logo-divide-bgbtn, #4D5AE5);
+    }
+    
+    .logo-divide {
+        color: var(--header-logo-title, #2E2F42);
+    }
+    
+    .header-list {
+        display: flex;
+    }
+    
+    .header-item:not(:last-child) {
+        margin-right: 40px;
+        position: relative;
+    }
+    
+    .active-menu::after {
+        content: '';
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        background-color: var(--link-hover, #404BBF);
+    }
+    
+    .header-link {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        gap: 40px;
+    
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--header-logo-title, #2E2F42);
+    
+        transition: color var(--tupical-transition)
+    }
+    
+    .header-contacts {
+        font-style: normal;
+        line-height: 1.5;
+    
+    }
+    
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .header-contact-link {
+        
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--header-contacts, #434455);
+        transition: color var(--tupical-transition);
+    }
+    
+    .header-link:hover,
+    .header-link:focus,
+    .header-contact-link:hover,
+    .header-contact-link:focus {
+        color: var(--link-hover, #404BBF);
+    
+    }
+
+    .mobile-menu-btn{
+        display: none;
+    }
+/**----------ABOUT----------*/
+    .about-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .about-item{
+        max-width: 356px;
+    }
+    .about-item:nth-child(-n+4){
+        margin-bottom: 0;
+    }
+    .about-item:nth-child(-n+2){
+        margin-bottom: 72px;
+    }
+    .about-title{
+        text-align: left;
+    }
+    
+/**----------TEAM PHOTO----------*/
+
+    .team-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+    }
+    
+    .team-item:nth-child(-n+4) {
+        margin: 0;
+    }
+/**----------CUSTOMERS----------*/
+    .customers-list {
+        gap: 72px 24px;
+    }
+
+    .customers-item{
+        max-width: 168px;
+        width: calc((100% - 24px) / 3);
+    }
+}
+/**----------DESKTOP----------------------*/
+
+
+
+
+@media screen and (max-width: 1157px) {
+    .about-icon, .product {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
+/**----------HEADER----------*/
+    
+    .contacts-list {
+        flex-direction: row;
+        gap: 40px;    
+    }
+    .header-logo {
+        margin-right: 76px;
+    }
+/**----------ABOUT----------*/
+    .about-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .about-text{
+        max-width: 264px;
+        font-weight: 400;
+    }
+    .about-item:nth-child(-n+4) {
+        margin-bottom: 0;
+    }
+    .about-list {
+        flex-wrap:nowrap;
+    }
+/**----------TEAM PHOTO----------*/
+    .team-item{
+        width: calc((100% - 24px) / 4);
+    }
+    .team-list {
+        flex-wrap: nowrap;
+    }
+/**----------CUSTOMERS----------*/
+    .customers-item {
+        width: calc((100% - 24px) / 6);
+    }
+    .customers-list {
+        flex-wrap: nowrap;
+    }
+}

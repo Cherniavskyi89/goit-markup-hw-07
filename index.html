@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/adaptiv.css" />
   </head>
   <body>
     <header class="header">
@@ -42,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <!--contacts-->
+        <!-- contacts-->
         <address class="header-contacts">
           <ul class="contacts-list list">
             <li class="contact-item">
@@ -59,12 +60,87 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mobile-menu-btn js-open-menu">
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- mobile-menu-->
+      <div class="mobile-menu is-hidden js-menu-container">
+        <div>
+          <button type="button" class="menu-close-btn js-close-menu">
+            <svg class="menu-close" width="8" height="8">
+              <use href="./images/icons.svg#picon-close-black-18d"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="menu-list list">
+              <li class="menu-item">
+                <a class="menu-link link active-menu" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <address class="menu-contacts">
+            <ul class="menu-contacts-list list">
+              <li class="menu-tel-item">
+                <a class="menu-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-email-item">
+                <a class="menu-email-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="menu-soc">
+            <ul class="menu-soc-list list">
+              <li class="menu-soc-item">
+                <a class="menu-soc-link link" href
+                  ><svg class="menu-soc-icon" width="24" height="24">
+                    <use href="images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="menu-soc-item">
+                <a class="menu-soc-link link" href
+                  ><svg class="menu-soc-icon" width="24" height="24">
+                    <use href="images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="menu-soc-item">
+                <a class="menu-soc-link link" href
+                  ><svg class="menu-soc-icon" width="24" height="24">
+                    <use href="images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="menu-soc-item">
+                <a class="menu-soc-link link" href
+                  ><svg class="menu-soc-icon" width="24" height="24">
+                    <use href="images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <!--Hero-->
 
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">
             Effective Solutions<br />
@@ -74,7 +150,7 @@
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!--About us-->
       <section class="about sections">
@@ -132,7 +208,7 @@
           </ul>
         </div>
       </section>
-      <!--What are we doing-->
+      <!-- What are we doing-->
       <section class="product">
         <div class="container">
           <h2 class="product-title">What are we doing</h2>
@@ -155,11 +231,34 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                src="./images/team_card-1.jpg"
-                alt="photo Mark Guerrero"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card-1-des.jpg,
+                    ./images/team_card-1-des@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card-1-tab.jpg,
+                    ./images/team_card-1-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card-1-mob.jpg,
+                    ./images/team_card-1-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team_card-1-mob.jpg"
+                  alt="photo Mark Guerrero"
+                  width="264"
+                />
+              </picture>
               <h3 class="team-name">Mark Guerrero</h3>
               <p class="team-position">Product Designer</p>
               <ul class="team-soc-list list">
@@ -194,11 +293,34 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                src="./images/team_card-2.jpg"
-                alt="photo Tom Ford"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card-2-des.jpg,
+                    ./images/team_card-2-des@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card-2-tab.jpg,
+                    ./images/team_card-2-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card-2-mob.jpg,
+                    ./images/team_card-2-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team_card-2-mob.jpg"
+                  alt="photo Tom Ford"
+                  width="264"
+                />
+              </picture>
               <h3 class="team-name">Tom Ford</h3>
               <p class="team-position">Frontend Developer</p>
               <ul class="team-soc-list list">
@@ -229,11 +351,34 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                src="./images/team_card-3.jpg"
-                alt="photo Camila Garcia"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card-3-des.jpg,
+                    ./images/team_card-3-des@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card-3-tab.jpg,
+                    ./images/team_card-3-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card-3-mob.jpg,
+                    ./images/team_card-3-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team_card-3-mob.jpg"
+                  alt="photo Camila Garcia"
+                  width="264"
+                />
+              </picture>
               <h3 class="team-name">Camila Garcia</h3>
               <p class="team-position">Marketing</p>
               <ul class="team-soc-list list">
@@ -264,11 +409,34 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                src="./images/team_card-4.jpg"
-                alt="photo Daniel Wilson"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card-4-des.jpg,
+                    ./images/team_card-4-des@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card-4-tab.jpg,
+                    ./images/team_card-4-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_card-4-mob.jpg,
+                    ./images/team_card-4-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/team_card-4-mob.jpg"
+                  alt="photo Daniel Wilson"
+                  width="264"
+                />
+              </picture>
               <h3 class="team-name">Daniel Wilson</h3>
               <p class="team-position">UI Designer</p>
               <ul class="team-soc-list list">
@@ -352,7 +520,7 @@
       </section>
     </main>
     <!--footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-cont container">
         <div class="footer-cont-logo">
           <a class="footer-logo link" href="./index.html"
@@ -418,8 +586,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close" width="8" height="8">
@@ -503,7 +671,8 @@
           <button type="submit" class="button-submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
