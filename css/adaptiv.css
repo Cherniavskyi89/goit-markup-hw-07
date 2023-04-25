@@ -7,10 +7,19 @@
     padding-left: 16px;
 }
 /**----------------MOB------------------------*/
-@media screen and (max-width: 427px){
+@media screen and (max-width: 427px) {
     .menu-soc-list{
         justify-content: space-between;
         gap: 0;
+    }
+    .menu-tel-link{
+        font-size: 26px;
+    }
+    .modal{
+        Width: 95%;
+        Height: 95%; 
+        Max-height: 524px;
+        Overflow: scroll;
     }
 }
 
@@ -24,7 +33,10 @@
         background-image: linear-gradient(
     rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
     }
-    
+    .modal {
+        width: 392px;
+        height: 586px;
+    }
 
 }
 /**----------------TAB------------------------*/
@@ -128,7 +140,9 @@
         color: var(--link-hover, #404BBF);
     
     }
-
+    .modal {
+        width: 408px;
+    }
     .mobile-menu-btn{
         display: none;
     }
@@ -197,6 +211,59 @@
     .customers-item{
         max-width: 168px;
         width: calc((100% - 24px) / 3);
+    }
+/**----------FOOTER----------*/
+    .footer-tab{
+        display: flex;
+        padding: 0 108px;
+        gap: 24px;
+    }
+    .footer-logo{
+        text-align: start;
+    }
+    .footer-soc-text {
+        margin-top: 0;
+    }
+    .form-title{
+        margin-left: 0;
+        text-align: start;
+    }
+    .footer-sub-container{
+        padding-left: 108px;
+        display:flex;
+        flex-direction: column;
+    }
+    .sub-input{
+        width:264px;
+    }
+    .footer-form{
+        display: flex;
+    }
+    .footer-button{
+        padding: 0;
+        margin: 0;
+        margin-left: 24px;
+    }
+/**----------PORTFOLIO----------*/
+    .filtr-list {
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+    .offers-list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+    .offers-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .filrt-button {
+        padding: 12px 24px;
+    }
+    .main-container {
+        padding-bottom: 76px;
+        padding-top: 64px;
     }
 }
 /**----------DESKTOP----------------------*/
@@ -273,5 +340,59 @@
     }
     .customers-list {
         flex-wrap: nowrap;
+    }
+/**----------FOOTER----------*/
+    .footer-tab {
+        padding: 0;
+        gap: 0;
+    }
+    
+    .footer-sub-container{
+        padding: 0;
+    }
+    .footer{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .footer-cont {
+        display: flex;
+        margin: 0 auto;
+        
+    }
+    
+    .footer-cont-logo {
+        margin-right: 120px;
+    }
+        
+    .form-title {
+        margin: 0px;
+        margin-left: 80px;
+    }
+    .footer-form {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    }
+    .footer-button{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+/**----------PORTFOLIO----------*/
+    .offers-list {
+    row-gap: 48px;
+    column-gap: 24px;
+    }
+    .filtr-list {
+        margin-bottom: 72px;
+    }
+    .main-container {
+        padding-bottom: 120px;
+        padding-top: 96px;
+    }
+    .offers-item {
+        margin-bottom: 0;
+        flex-basis: calc((100% - 48px) / 3);
     }
 }
