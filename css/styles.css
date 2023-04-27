@@ -181,6 +181,9 @@ body {
     color: var(--header-logo-title, #2E2F42);
 }
 
+.active-mob-menu{
+    color: var(--link-hover);
+}
 .menu-tel-item {
     margin-bottom: 40px;
 }
@@ -444,7 +447,6 @@ body {
 }
 .team-soc-icon {
     fill: var(--mainbg-title, #FFFFFF);
-
     transition: transition box-shadow var(--tupical-transition), 
     background-color var(--tupical-transition);
 }
@@ -455,19 +457,12 @@ body {
     background-color: var(--link-hover, #404BBF);
 }
 
-.team-soc-link:focus,
-.team-soc-link:hover > .team-soc-icon {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
 /**----------CUSTOMERS----------*/
 
 .customers-sections {
     padding-top: 130px;
     padding-bottom: 120px;
 }
-
 
 .customers-title {
     font-size: 36px;
@@ -488,7 +483,6 @@ body {
 }
 
 .customers-item {
-    /* width: 168px; */
     width: calc((100% - 16px) / 2);
     max-width: 190px;
     height: 88px;
@@ -598,11 +592,6 @@ body {
 }    
 .footer-soc-icon {
     transition: box-shadow var(--tupical-transition);
-}
-
-.footer-soc-link:focus,
-.footer-soc-link:hover > .footer-soc-icon{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .form-title{
