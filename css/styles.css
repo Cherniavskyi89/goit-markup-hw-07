@@ -186,10 +186,12 @@ body {
 }
 .menu-tel-item {
     margin-bottom: 40px;
+    font-style: normal;
 }
 
 .menu-email-item {
     margin-bottom: 48px;
+    font-style: normal;
 }
 
 .menu-email-link{
@@ -404,7 +406,7 @@ body {
     margin-bottom: 72px;
 }
 .team-name {
-    margin-top: 32px;
+    /* margin-top: 32px; */
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -430,7 +432,7 @@ body {
 .team-soc-item {
     width: 40px;
     height: 40px;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
 }
 
 .team-soc-link {
@@ -455,6 +457,11 @@ body {
 .team-soc-link:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: var(--link-hover, #404BBF);
+}
+
+.team-item-wrap{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /**----------CUSTOMERS----------*/
@@ -852,7 +859,7 @@ body {
 }
 
 .modal-input {
-    width: 360px;
+    width: 344px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -879,11 +886,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-top: 24px;
     border-color: transparent;
-    margin: 24px auto;
+    margin: 0 auto;
+    margin-top: 24px;
     display: block;
-    
 }
 .modal-label{
     display: inline-block;
@@ -893,6 +899,9 @@ body {
     letter-spacing: 0.01em;
     color: var(--modal-title, #8E8F99);
     margin-bottom: 4px;
+    margin-top: 8px;
+}
+.modal-label:not(:first-child){
     margin-top: 8px;
 }
 .modal-wrap{
@@ -912,7 +921,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.04em;
     
-    width: 360px;
+    width: 344px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -930,9 +939,6 @@ body {
     border-color: var(--logo-divide-bgbtn, #4D5AE5);
 }
 
-.privasy {
-    
-}
 .input-check{
     transition: background-color var(--tupical-transition);
     

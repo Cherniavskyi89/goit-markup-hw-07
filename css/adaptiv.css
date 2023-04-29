@@ -8,6 +8,7 @@
 }
 /**----------------MOB------------------------*/
 @media screen and (max-width: 427px) {
+    
     .menu-soc-list{
         justify-content: space-between;
         gap: 0;
@@ -21,6 +22,7 @@
         Max-height: 524px;
         Overflow: scroll;
     }
+
 }
 
 @media screen and (min-width: 428px) {
@@ -37,6 +39,7 @@
         width: 392px;
         height: 586px;
     }
+    
 
 }
 /**----------------TAB------------------------*/
@@ -148,6 +151,13 @@
     .mobile-menu-btn{
         display: none;
     }
+    .modal-input {
+        width: 360px;
+    }
+
+    .modal-textare {
+        width: 360px;
+    }
 
 /**----------HERO----------*/
     .hero {
@@ -215,9 +225,12 @@
         width: calc((100% - 24px) / 3);
     }
 /**----------FOOTER----------*/
+    .footer{
+        padding: 96px 148px 96px 92px ;
+    }
     .footer-tab{
         display: flex;
-        padding: 0 108px;
+        /* padding: 0 108px; */
         gap: 24px;
     }
     .footer-logo{
@@ -231,7 +244,7 @@
         text-align: start;
     }
     .footer-sub-container{
-        padding-left: 108px;
+        /* padding-left: 108px; */
         display:flex;
         flex-direction: column;
     }
