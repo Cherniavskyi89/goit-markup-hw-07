@@ -240,11 +240,12 @@
         margin-top: 0;
     }
     .form-title{
-        margin-left: 0;
+        margin: 0;
         text-align: start;
     }
+    
     .footer-sub-container{
-        /* padding-left: 108px; */
+        margin-top: 72px;
         display:flex;
         flex-direction: column;
     }
@@ -275,7 +276,7 @@
         flex-basis: calc((100% - 24px) / 2);
     }
 
-    .offers-item:nth-last-child(-n+3) {
+    .offers-item:nth-last-child(-n+9) {
         margin-bottom: 0;
     }
     .filrt-button {
@@ -309,6 +310,10 @@
     .header-logo {
         margin-right: 76px;
         line-height: 1.33;
+    }
+    .header-contact-link{
+        font-size: 16px;
+        line-height: 1.5;
     }
 
 /**----------HERO----------*/
