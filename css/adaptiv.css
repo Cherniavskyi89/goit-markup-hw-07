@@ -218,10 +218,14 @@
         width: calc((100% - 24px) / 3);
     }
 /**----------FOOTER----------*/
-    .footer-cont{
-        padding: 96px 164px 96px 108px;
+    .footer{
+        padding-top: 96px;
+        padding-bottom: 96px;
+        margin: 0 auto;
     }
-    
+    .footer-cont{
+        padding-left: 108px;
+    }
     .footer-tab{
         display: flex;
         gap: 24px;
@@ -243,7 +247,7 @@
     }
     
     .footer-sub-container{
-        margin-top: 72px;
+        
         display:flex;
         flex-direction: column;
     }
@@ -382,7 +386,7 @@
         margin: 0 0 0 80px;
     }
     .footer-cont{
-        padding: 100px 0 100px 0;
+        padding: 0 16px 0 16px;
     }
     .footer-cont {
         display: flex;

@@ -524,10 +524,11 @@ body {
 /**----------FOOTER----------*/
 .footer{
     background-color: var(--header-logo-title, #2E2F42);
-}
-.footer-cont{
     padding-top: 96px;
     padding-bottom: 96px;
+}
+.footer-sub-container{
+    margin-top: 72px;
 }
 
 .footer-logo {
@@ -609,7 +610,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin: 72px auto 16px;
+    margin-bottom: 16px;
     text-align: center;
 }
 .sub-input{
