@@ -52,14 +52,7 @@
     .header {
         border-bottom: 1px solid #E7E9FC;
     }
-    
-    .main-nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
-    }
-    
+        
     .header-navigation {
         display: flex;
         align-items: center;
@@ -225,16 +218,20 @@
         width: calc((100% - 24px) / 3);
     }
 /**----------FOOTER----------*/
-    .footer{
-        padding: 96px 148px 96px 92px ;
+    .footer-cont{
+        padding: 96px 164px 96px 108px;
     }
+    
     .footer-tab{
         display: flex;
-        /* padding: 0 108px; */
         gap: 24px;
+        
     }
     .footer-logo{
         text-align: start;
+    }
+    .footer-soc{
+        margin-top: 0;
     }
     .footer-soc-text {
         margin-top: 0;
@@ -242,6 +239,7 @@
     .form-title{
         margin: 0;
         text-align: start;
+
     }
     
     .footer-sub-container{
@@ -315,6 +313,9 @@
         font-size: 16px;
         line-height: 1.5;
     }
+    .contacts-list {
+        padding: 0;
+    }
 
 /**----------HERO----------*/
     .hero {
@@ -372,13 +373,16 @@
         padding: 0;
         gap: 0;
     }
+    .footer-soc{
+        margin-top: 0;
+    }
     
     .footer-sub-container{
         padding: 0;
+        margin: 0 0 0 80px;
     }
-    .footer{
-        padding-top: 100px;
-        padding-bottom: 100px;
+    .footer-cont{
+        padding: 100px 0 100px 0;
     }
     .footer-cont {
         display: flex;
@@ -390,14 +394,9 @@
         margin-right: 120px;
     }
         
-    .form-title {
-        margin: 0px;
-        margin-left: 80px;
-    }
     .footer-form {
     display: flex;
     align-items: center;
-    margin-left: 80px;
     }
     .footer-button{
     

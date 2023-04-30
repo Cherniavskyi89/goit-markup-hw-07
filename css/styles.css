@@ -63,7 +63,7 @@ body {
 .container {
     width: 100%;
     padding-right: 16px;
-    padding-left: 15px;
+    padding-left: 16px;
     margin: 0 auto;
     
 }
@@ -148,7 +148,7 @@ body {
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: background-color: var(--tupical-transition);
+    transition: background-color var(--tupical-transition);
     position: relative;
     
 }
@@ -524,9 +524,10 @@ body {
 /**----------FOOTER----------*/
 .footer{
     background-color: var(--header-logo-title, #2E2F42);
+}
+.footer-cont{
     padding-top: 96px;
     padding-bottom: 96px;
-    
 }
 
 .footer-logo {
@@ -819,7 +820,7 @@ body {
     border-radius: 50%;
     display: block;
     margin-left: auto;
-    transition: background-color: var(--tupical-transition);
+    transition: background-color var(--tupical-transition);
     position: relative;
 }
 .modal-close{
